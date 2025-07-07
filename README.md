@@ -145,7 +145,7 @@ async function processOLMFile(olmPath, outputPath) {
     reader.setCallback('email', (email, fullPath) => {
         const subject = email.OPFMessageCopySubject?.['#text'] || 'No subject';
         const from = email.OPFMessageCopyFromAddresses?.['#text'] || 'Unknown sender';
-        console.log(`📧 Email: ${subject} (from: ${from})`);
+        console.log(`Email: ${subject} (from: ${from})`);
     });
     
     reader.setCallback('contact', (contact) => {
