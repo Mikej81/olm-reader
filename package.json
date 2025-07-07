@@ -4,7 +4,7 @@
   "description": "Node.js library for reading MS Outlook for Mac OLM archives and converting to standard formats",
   "main": "index.js",
   "bin": {
-    "olm-extract": "./olm-extract.js"
+    "olm-extract": "olm-extract.js"
   },
   "scripts": {
     "test": "mocha test/**/*.test.js",
@@ -34,7 +34,7 @@
   "homepage": "https://github.com/Mikej81/olm-reader",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mikej81/olm-reader.git"
+    "url": "git+https://github.com/Mikej81/olm-reader.git"
   },
   "bugs": {
     "url": "https://github.com/Mikej81/olm-reader/issues"
