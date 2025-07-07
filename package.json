@@ -1,0 +1,82 @@
+{
+  "name": "olm-reader",
+  "version": "1.0.0",
+  "description": "Node.js library for reading MS Outlook for Mac OLM archives and converting to standard formats",
+  "main": "index.js",
+  "bin": {
+    "olm-extract": "./olm-extract.js"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.test.js",
+    "test:watch": "mocha test/**/*.test.js --watch",
+    "test:coverage": "nyc mocha test/**/*.test.js",
+    "extract": "node olm-extract.js"
+  },
+  "keywords": [
+    "olm",
+    "outlook",
+    "mac",
+    "archive",
+    "email",
+    "eml",
+    "vcf",
+    "vcard",
+    "ics",
+    "icalendar",
+    "contacts",
+    "calendar",
+    "tasks",
+    "notes",
+    "converter"
+  ],
+  "author": "Mikej81",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Mikej81/olm-reader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mikej81/olm-reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mikej81/olm-reader/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "html",
+      "lcov"
+    ],
+    "exclude": [
+      "test/**",
+      "examples/**",
+      "coverage/**"
+    ]
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "fast-xml-parser": "^5.2.5",
+    "node-stream-zip": "^1.15.0",
+    "nodemailer": "^6.10.1",
+    "yauzl": "^2.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.1",
+    "tmp": "^0.2.3"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "olm-extract.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "preferGlobal": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}

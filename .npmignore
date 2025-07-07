@@ -1,0 +1,41 @@
+# Development files
+.git/
+.gitignore
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test files
+test/
+tests/
+spec/
+*.test.js
+*.spec.js
+
+# Development dependencies
+node_modules/
+coverage/
+.nyc_output/
+
+# Example and development files
+examples/
+
+# Documentation source files
+docs/
+*.md.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Build artifacts
+dist/
+build/
